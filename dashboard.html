@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskdoCretivestudio.com</title>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>TaskdoCreativestudio Dashboard</h1>
+    <button onclick="logout()" class="btn-secondary">Logout</button>
+  </header>
+
+  <main class="dashboard">
+    <div class="greeting" id="greeting"></div>
+
+    <div class="todo-container">
+      <h2> To-Do List Ku</h2>
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="Add new task...">
+        <button onclick="addTask()" class="btn-primary">Add</button>
+      </div>
+
+      <table class="task-table">
+        <thead>
+          <tr>
+            <th>Done</th>
+            <th>Task Kamu</th>
+            <th>Action Kamu</th>
+          </tr>
+        </thead>
+        <tbody id="taskList"></tbody>
+      </table>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

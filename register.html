@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Taskdo</title>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <h2 class="auth-title">REGISTER AKUN</h2>
+      <p class="auth-subtitle">todolistcreativestudio</p>
+      <form id="registerForm">
+        <input type="text" id="registerName" placeholder="Full Name" required>
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" placeholder="Password" required>
+        <button type="submit" class="btn-primary">Register</button>
+        <p class="switch-auth"> Sudah Punya Akun?
+          <a href="login.html">Masuk</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
